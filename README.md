@@ -2,7 +2,7 @@
   <img src="https://github.com/izipay-pe/Imagenes/blob/main/logos_izipay/logo-izipay-banner-1140x100.png?raw=true" alt="Formulario" width=100%/>
 </p>
 
-# Embedded-PaymentForm-NodeJS
+# Popin-PaymentForm-NodeJS
 
 ## Índice
 
@@ -25,7 +25,7 @@ Este manual está diseñado para ayudarte a comprender el flujo de la integraci�
 > En la última actualización se agregaron los campos: **nombre del tarjetahabiente** y **correo electrónico** (Este último campo se visualizará solo si el dato no se envía en la creación del formtoken). 
 
 <p align="center">
-  <img src="https://github.com/izipay-pe/Imagenes/blob/main/formulario_incrustado/Imagen-Formulario-Incrustado.png?raw=true" alt="Formulario" width="350"/>
+  <img src="https://github.com/izipay-pe/Imagenes/blob/main/formulario_popin/Imagen-Formulario-Popin.png?raw=true" alt="Formulario" width="350"/>
 </p>
 
 ## 🔑 2. Requisitos Previos
@@ -161,7 +161,7 @@ Además, se inserta en el body una etiqueta div con la clase `kr-embedded` que d
 Body:
 ```javascript
 <div id="micuentawebstd_rest_wrapper">
-    <div class="kr-embedded" kr-form-token="<%= formToken %>"></div>
+    <div class="kr-embedded" kr-form-token="<%= formToken %>" kr-popin></div>
 </div>
 ```
 ℹ️ Para más información: [Visualizar formulario](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/javascript/guide/embedded/formToken.html)
@@ -268,10 +268,10 @@ module.exports = keys
 
 ## 🎨 5. Personalización
 
-Si deseas aplicar cambios específicos en la apariencia de la pasarela de pago, puedes lograrlo mediante la modificación de código CSS. En este enlace [Código CSS - Incrustado](https://github.com/izipay-pe/Personalizacion/blob/main/Formulario%20Incrustado/Style-Personalization-Incrustado.css) podrá encontrar nuestro script para un formulario incrustado.
+Si deseas aplicar cambios específicos en la apariencia de la pasarela de pago, puedes lograrlo mediante la modificación de código CSS. En este enlace [Código CSS - Popin](https://github.com/izipay-pe/Personalizacion/blob/main/Formulario%20Popin/Style-Personalization-PopIn.css) podrá encontrar nuestro script para un formulario popin.
 
 <p align="center">
-  <img src="https://i.postimg.cc/zDddmKpH/persona.png" alt="Formulario"/>
+  <img src="https://github.com/izipay-pe/Imagenes/blob/main/formulario_popin/Imagen-Formulario-Custom-Popin.png?raw=true" alt="Formulario Popin"/>
 </p>
 
 ## 📚 6. Consideraciones

@@ -170,7 +170,7 @@ Body:
 ## 💳4.2. Analizar resultado del pago
 
 ### Validación de firma
-Se configura la función `checkHash` que realizará la validación de los datos recibidos por el servidor luego de realizar el pago mediante el parámetro `kr-answer` utilizando una clave de encriptacón definida en `key`. Podrás encontrarlo en el archivo `controllers/paidController.js`.
+Se configura la función `checkHash` que realizará la validación de los datos recibidos por el servidor luego de realizar el pago mediante el parámetro `kr-answer` utilizando una clave de encriptación definida en `key`. Podrás encontrarlo en el archivo `controllers/paidController.js`.
 
 ```node
 const checkHash = (response, key) => {
